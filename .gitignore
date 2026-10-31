@@ -1,0 +1,22 @@
+# Node & Frontend
+node_modules/
+frontend/dist/
+frontend/.env
+*.local
+
+# Python & Backend
+__pycache__/
+*.py[cod]
+*$py.class
+backend/.venv/
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/maskoff.db
+backend/instance/
+.pytest_cache/
+
+# Environment files
+.env
+.DS_Store
+Thumbs.db
+

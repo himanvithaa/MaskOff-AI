@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text-main font-sans antialiased min-h-screen selection:bg-primary-100 selection:text-primary-900;
+  }
+}
+
+/* Minimalist Clean Component Styles */
+.clean-card {
+  @apply bg-white border border-border rounded-2xl shadow-subtle transition-all duration-200;
+}
+
+.clean-card-hover {
+  @apply bg-white border border-border rounded-2xl shadow-subtle hover:shadow-card-hover hover:border-border-dark transition-all duration-200;
+}
+
+.clean-input {
+  @apply bg-white border border-border rounded-xl text-sm text-text-main placeholder-text-subtle transition-all duration-150 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-100;
+}
+
+/* Subtle Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
